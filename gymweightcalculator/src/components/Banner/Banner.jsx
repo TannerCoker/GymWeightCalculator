@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Banner = () => {
+import './Banner.css';
+
+const Banner = ({title}) => {
   return (
-    <div>Banner</div>
+    <div className='app__banner app__bg'>
+      <div className='app__banner-title'>
+      <h1 className='headtext__teko'>{title}</h1>
+      </div>
+    </div>
   )
 }
 

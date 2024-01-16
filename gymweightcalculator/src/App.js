@@ -7,6 +7,7 @@ import './App.css';
 const App = () => {
   return (
     <div>
+      <Banner title='Plate Calculator'/>
       <Header />
       <BarbellCalculator />
     </div>

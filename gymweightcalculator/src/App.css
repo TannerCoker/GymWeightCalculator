@@ -17,3 +17,14 @@
   line-height: 83.2px;
   letter-spacing: 0.04em;
 }
+
+.app__bg {
+  background: linear-gradient(143deg, rgb(22, 10, 13) 0%, rgb(17, 54, 52) 100%);
+}
+
+@media screen and (max-width: 450px) {
+  .headtext__teko {
+      font-size: 45px;
+      line-height: 70px;
+  }
+}
