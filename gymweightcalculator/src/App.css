@@ -22,6 +22,10 @@
   background: linear-gradient(143deg, rgb(22, 10, 13) 0%, rgb(17, 54, 52) 100%);
 }
 
+.app__wrapper {
+  min-height: 100vh;
+}
+
 @media screen and (max-width: 450px) {
   .headtext__teko {
       font-size: 45px;

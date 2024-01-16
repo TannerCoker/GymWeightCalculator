@@ -6,7 +6,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
+    <div className='app__bg app__wrapper'>
       <Banner title='Plate Calculator'/>
       <Header />
       <BarbellCalculator />
