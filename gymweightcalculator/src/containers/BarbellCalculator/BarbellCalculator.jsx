@@ -22,14 +22,8 @@ const BarbellCalculator = () => {
     <div className='app__bbCalc'>
       <div className='app__bbCalc-card'>
         <div className='app__bbCalc-card_body'>
-          <div className='app__bbCalc-card_body-bar'>
-            <p className='p__teko'>Loading both sides of barbell?</p>
-            <div className='app__bbCalc-card_body-bar_buttons'>
-              <button className='custom__button' onClick={() => {updateDistro(true);}}>Both Sides</button>
-              <button className='custom__button' onClick={() => {updateDistro(false);}}>Single Side</button>
-            </div>
-          </div>
           <div className='app__bbCalc-card_body-plates'>
+            <p className='p__teko'>Value is calculated as X number of plates on both sides</p>
             <BbCalcRow text='45Ibs plates:' plate={numOf45s} setPlate={setNumOf45s}/>
             <BbCalcRow text='35Ibs plates:' plate={numOf35s} setPlate={setNumOf35s}/>
             <BbCalcRow text='25Ibs plates:' plate={numOf25s} setPlate={setNumOf25s}/>

@@ -14,11 +14,6 @@
     border: 1px solid var(--color-accent);
 }
 
-.app__bbCalc-card_body-bar_buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
 .app__bbCalc-card_body-plates {
     display: flex;
     flex-direction: column;
