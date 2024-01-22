@@ -1,0 +1,17 @@
+.app__BbCalcRow {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.app__BbCalcRow-buttons {
+    display: flex;
+    
+}
+
+.app__BbCalcRow-buttons button {
+    padding: 0 1rem;
+    margin: 0 .25rem;
+}
