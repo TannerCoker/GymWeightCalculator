@@ -1,0 +1,31 @@
+.app__bbCalc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app__bbCalc-card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem 3rem;
+    background: var(--color-back);
+    border: 1px solid var(--color-accent);
+}
+
+.app__bbCalc-card_body-bar_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__bbCalc-card_body-plates {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__bbCalc-card_body-button {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+}
