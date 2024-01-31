@@ -8,7 +8,9 @@ const BbCalcRow = ({text, plate, setPlate}) => {
   const [numOfPlates, setNumOfPlates] = useState(0);
 
   const valueInc = () => {
-    setPlate(plate + 1);
+    if(plate < 10) {
+      setPlate(plate + 1);
+    }
   }
 
   const valueDec = () => {

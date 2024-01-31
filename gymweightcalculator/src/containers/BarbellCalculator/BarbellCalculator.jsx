@@ -5,17 +5,18 @@ import './BarbellCalculator.css';
 
 const BarbellCalculator = () => {
 
-  const [distribution, setDistribution] = useState(true);
   const [numOf45s, setNumOf45s] = useState(0);
   const [numOf35s, setNumOf35s] = useState(0);
   const [numOf25s, setNumOf25s] = useState(0);
   const [numOf10s, setNumOf10s] = useState(0);
   const [numOf5s, setNumOf5s] = useState(0);
   const [numOf2_5s, setNum2_5s] = useState(0);
+  const [totalWeight, setTotalWeight] = useState(45 + 45*numOf45s);
 
-  const updateDistro = (distro) => {
-    setDistribution(distro);
-    console.log(distribution);
+
+
+  const updateWeight = () => {
+    setTotalWeight(45 + (45*numOf45s*2) + (35*numOf35s*2) + (25*numOf25s*2) + (10*numOf10s*2) + (5*numOf5s*2) + (2.5*numOf2_5s*2));
   }
 
   return (
@@ -32,7 +33,11 @@ const BarbellCalculator = () => {
             <BbCalcRow text='2.5Ibs plates:' plate={numOf2_5s} setPlate={setNum2_5s}/>
           </div>
           <div className='app__bbCalc-card_body-button'>
-            <button className='custom__button' onClick={() => {}}>Calculate</button>
+            <button className='custom__button' onClick={() => {updateWeight();}}>Calculate</button>
+          </div>
+          <div className='app__bbCalc-card_body-weight'>
+            <h1 className='headtext__teko'>Loaded Weight:</h1>
+            <h1 className='headtext__teko'>{totalWeight}</h1>
           </div>
         </div>
       </div>
