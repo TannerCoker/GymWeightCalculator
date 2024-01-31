@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, BarbellCalculator } from './containers';
+import { Header, BarbellCalculator, Footer } from './containers';
 import { Banner } from './components';
 
 import './App.css';
@@ -10,6 +10,7 @@ const App = () => {
       <Banner title='Plate Calculator'/>
       <Header />
       <BarbellCalculator />
+      <Footer />
     </div>
   )
 }

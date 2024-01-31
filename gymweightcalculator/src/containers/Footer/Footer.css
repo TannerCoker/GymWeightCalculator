@@ -1,0 +1,5 @@
+.app__footer-links {
+    display: flex;
+    justify-content: center;
+    color: var(--color-white);
+}
